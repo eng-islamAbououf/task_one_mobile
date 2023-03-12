@@ -46,6 +46,7 @@ class RegisterScreen extends StatelessWidget {
               child: CustomInputField(
                 txt: "Email",
                 prefix: const Icon(Icons.mail_outline),
+                inputType: TextInputType.emailAddress,
               ),
             ),
             Container(
@@ -65,7 +66,7 @@ class RegisterScreen extends StatelessWidget {
               child: MaterialButton(
                   onPressed: (){},
                 child: const Text(
-                    "Submit",
+                    "REGISTER",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
