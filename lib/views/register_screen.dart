@@ -30,6 +30,7 @@ class RegisterScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: CustomInputField(
                   txt: "Name",
+                prefix: const Icon(Icons.account_box_outlined),
               ),
             ),
             Padding(
@@ -37,12 +38,14 @@ class RegisterScreen extends StatelessWidget {
               child: CustomInputField(
                 txt: "Birth date",
                 inputType: TextInputType.datetime,
+                prefix: const Icon(Icons.date_range),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: CustomInputField(
                 txt: "Email",
+                prefix: const Icon(Icons.mail_outline),
               ),
             ),
             Container(

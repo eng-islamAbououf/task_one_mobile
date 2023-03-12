@@ -4,6 +4,7 @@ class CustomInputField extends StatelessWidget {
   CustomInputField({
     Key? key,
     required this.txt,
+    required this.prefix,
     TextInputType? inputType,
     Color? color,
     int? maxLine,
@@ -14,6 +15,7 @@ class CustomInputField extends StatelessWidget {
   TextInputType? inputType;
   Color? color ;
   int? maxLine, maxLen ;
+  Icon? prefix ;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,6 +31,7 @@ class CustomInputField extends StatelessWidget {
           labelText: txt,
           filled: true,
           fillColor: color ?? Colors.white,
+          prefixIcon: prefix,
         ),
         minLines: 1,
         validator: (value) {
